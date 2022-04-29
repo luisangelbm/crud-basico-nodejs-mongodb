@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Ryan Rey",
+  "age": 56,
+  "email": "Ryan@gmail.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/626b5492581ba14ee7d5ece5 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/626b54c8581ba14ee7d5ece7 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Samantha Gwen",
+  "age": 56,
+  "email": "Samantha@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/626b5492581ba14ee7d5ece5 HTTP/1.1
